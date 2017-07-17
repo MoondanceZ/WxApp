@@ -10,7 +10,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </view>
     <view class="loginbutton">
-      <button class="page-body-button" type="primary" bindtap="login">微信登录</button>
+      <button type="primary" bindtap="login" loading="{{isLogining}}">{{loginText}}</button>
     </view>
   </block>
 </view>

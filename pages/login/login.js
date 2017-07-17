@@ -12,12 +12,17 @@ Page({
     })
   },
   data: {
-    hasLogin: false,
     userInfo: {},
-    loginInfo: ''
+    loginText: '微信登录',
+    loginInfo: '',
+    isLogining: false
   },
   login: function () {
-    var that = this
+    var that = this;
+    that.setData({
+      isLogining: true,
+      loginText: '正在登录'
+    })
     wx.login({
       success: function (data) {
         if (data.code) {
@@ -31,7 +36,7 @@ Page({
               that.setData({
                 hasLogin: true,
                 loginInfo: '登录成功'
-              })              
+              })
             },
             fail: function (res) {
               console.log('拉取用户openid失败，将无法正常使用开放接口等服务', res)
@@ -39,7 +44,7 @@ Page({
                 hasLogin: true,
                 loginInfo: '登录失败'
               })
-              callback(res)              
+              callback(res)
             }
           })
         } else {
