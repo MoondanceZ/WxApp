@@ -1,7 +1,7 @@
 <view class="container">
   <block wx:if="{{hasLogin === true}}"> 
     <view  bindtap="bindViewTap">      
-      <text class="page-body-text">欢迎登录</text>
+      <text class="page-body-text">{{loginInfo}}</text>
     </view>
   </block>
   <block wx:if="{{hasLogin === false}}"> 

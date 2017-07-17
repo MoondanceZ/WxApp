@@ -25,6 +25,6 @@ App({
   globalData: {
     hasLogin: false,
     userInfo: null,
-    openid: null
+    openId: null
   }  
 })

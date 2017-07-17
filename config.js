@@ -5,7 +5,7 @@
 // 此处主机域名是腾讯云解决方案分配的域名
 // 小程序后台服务解决方案：https://www.qcloud.com/solution/la
 
-var host = "14592619.qcloud.la"
+var host = "api.round-king.com"
 
 var config = {
 
@@ -19,7 +19,7 @@ var config = {
     requestUrl: `https://${host}/testRequest`,
 
     // 用code换取openId
-    openIdUrl: `https://${host}/openid`,
+    openIdUrl: `https://${host}/wechat/openId`,
 
     // 测试的信道服务接口
     tunnelUrl: `https://${host}/tunnel`,
