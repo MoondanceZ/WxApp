@@ -27,11 +27,11 @@ Page({
             success: function (res) {
               console.log('拉取openid成功', res)
               app.globalData.hasLogin = true
+              app.globalData.openId = res.OpenId;
               that.setData({
                 hasLogin: true,
                 loginInfo: '登录成功'
-              })
-              app.globalData.openId = res.OpenId;
+              })              
             },
             fail: function (res) {
               console.log('拉取用户openid失败，将无法正常使用开放接口等服务', res)
