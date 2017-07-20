@@ -23,7 +23,7 @@ App({
   },
 
   globalData: {
-    hasLogin: false,
+    hasLogin: true,
     userInfo: null,
     openId: null
   }  

@@ -1,15 +1,21 @@
 const openIdUrl = require('../../config').openIdUrl
 var app = getApp()
 Page({
-  onLoad: function () {
-    var that = this
-    app.getUserInfo(function (userInfo) {
-      //更新数据
-      that.setData({
-        userInfo: userInfo,
-        hasLogin: app.globalData.hasLogin
+  onLoad: function () {    
+    if (app.globalData.hasLogin) {
+      wx.redirectTo({
+        url: '../index/index'
       })
-    })
+    } else {
+      var that = this
+      app.getUserInfo(function (userInfo) {
+        //更新数据
+        that.setData({
+          userInfo: userInfo,
+          hasLogin: app.globalData.hasLogin
+        })
+      })
+    }
   },
   data: {
     userInfo: {},
