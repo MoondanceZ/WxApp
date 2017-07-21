@@ -9,5 +9,9 @@
   <view class="index-content">
     <view class="income">收入</view>
     <view class="payout">支出</view>
+    <view class="record">
+      <block>
+      </block>
+    </view>
   </view>
 </view>

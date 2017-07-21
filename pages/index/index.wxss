@@ -26,6 +26,7 @@
   margin-top: 10px;
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 .income, .payout {
@@ -34,4 +35,7 @@
   color: #c8c8c8;
   font-family: 'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';
   font-size: 12px;
+}
+.record{
+  width: 100%;
 }
