@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view>
+<view class="container">
   <view class="index-head">
     <image class="index-head-background" src="../../image/index-head-background.png"></image>
     <view bindtap="bindViewTap" class="userinfo">
@@ -7,11 +7,18 @@
     </view>
   </view>
   <view class="index-content">
-    <view class="income">收入</view>
-    <view class="payout">支出</view>
-    <view class="record">
-      <block>
-      </block>
-    </view>
+    <block>
+      <view class="income">当月收入</view>
+      <view class="payout">当月支出</view>
+      <view class="income-number">1000.00</view>
+      <view class="payout-number">200.00</view>
+    </block>
+    <block class="record">
+      <view class="date-left">7月21日</view>
+      <view class="date-right">20.00</view>
+
+      <view class="income-left">吃饭</view>
+      <view class="payout-right">200.00</view>
+    </block>
   </view>
 </view>
