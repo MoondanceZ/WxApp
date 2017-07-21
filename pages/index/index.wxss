@@ -1,20 +1,23 @@
 /**index.wxss**/
-.index-top {
-  height: 40px;
+
+.index-head {
+  height: 100px;
+}
+
+.index-head-background {
+  height: 100px;
   width: 100%;
-  border-bottom: 1px solid #eceff3;
 }
 
 .userinfo {
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  margin-top: -40px;
+  align-items: center;
+  margin-top: -40px;  
 }
 
 .userinfo-avatar {
-  width: 180rpx;
-  height: 180rpx;
-  /* margin: 20rpx; */
-  border-radius: 50%;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;  
 }

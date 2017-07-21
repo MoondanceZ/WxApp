@@ -1,7 +1,10 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="index-top"></view>
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>    
+<view>
+  <view class="index-head">
+    <image class="index-head-background" src="../../image/index-head-background.png"></image>
+    <view bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
   </view>
+  <view class="index-content"></view>
 </view>
