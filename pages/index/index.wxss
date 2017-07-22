@@ -140,3 +140,7 @@
   left: -11px;
 }
 
+.p-amount {
+  font-size: 14px;
+  padding-left: 20px;
+}

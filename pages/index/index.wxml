@@ -13,24 +13,32 @@
       <view class="income-number">1000.00</view>
       <view class="payout-number">200.00</view>
     </block>
-    <block class="record">
-      <view class="date-left">7月21日</view>
-      <view class="date-right">20.00</view>
-
-      <view class="income-left">吃饭</view>
-      <view class="payout-right">200.00</view>
-      <view class="date-left">7月21日</view>
-      <view class="date-right">20.00</view>
-
-      <view class="income-left">吃饭</view>
-      <view class="payout-right">200.00</view>
-      
-      <view class="income-left">吃饭</view>
-      <view class="payout-right">吃饭.00</view>
-      <view class="income-left">吃饭</view>
-      <view class="payout-right">吃饭.00</view>
-      <view class="income-left">吃饭</view>
-      <view class="payout-right">吃饭.00</view>
+      <block class="record" wx:key="index"  wx:for="{{ConsumeRecord}}">
+        <block wx:if="{{index == 0 || (item.Date != ConsumeRecord[index-1].Date)}}">
+          <view class="date-left">{{item.Date}}</view>
+          <view class="date-right">{{item.Amount}}</view>
+        </block>
+        <block wx:else>
+          <block wx:if="{{item.Type==1}}">
+            <view class="income-left"></view>
+            <view class="payout-right">
+              <text>{{item.Info}}</text>
+              <text class="p-amount">{{item.Amount}}</text>            
+            </view>
+          </block>
+          <block wx:if="{{item.Type==2}}">
+          <view class="income-left">          
+              <text>
+              {{item.Info}}
+              </text> 
+              <text>
+              {{item.Amount}}</text>
+              </view>
+            <view class="payout-right">   
+            </view>
+          </block>
+        </block>
     </block>
+    
   </view>
 </view>
