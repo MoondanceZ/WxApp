@@ -19,6 +19,18 @@
 
       <view class="income-left">吃饭</view>
       <view class="payout-right">200.00</view>
+      <view class="date-left">7月21日</view>
+      <view class="date-right">20.00</view>
+
+      <view class="income-left">吃饭</view>
+      <view class="payout-right">200.00</view>
+      
+      <view class="income-left">吃饭</view>
+      <view class="payout-right">200.00</view>
+      <view class="income-left">吃饭</view>
+      <view class="payout-right">200.00</view>
+      <view class="income-left">吃饭</view>
+      <view class="payout-right">200.00</view>
     </block>
   </view>
 </view>
