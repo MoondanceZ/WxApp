@@ -26,11 +26,11 @@
       <view class="payout-right">200.00</view>
       
       <view class="income-left">吃饭</view>
-      <view class="payout-right">200.00</view>
+      <view class="payout-right">吃饭.00</view>
       <view class="income-left">吃饭</view>
-      <view class="payout-right">200.00</view>
+      <view class="payout-right">吃饭.00</view>
       <view class="income-left">吃饭</view>
-      <view class="payout-right">200.00</view>
+      <view class="payout-right">吃饭.00</view>
     </block>
   </view>
 </view>
