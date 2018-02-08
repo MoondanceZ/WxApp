@@ -1,146 +1,21 @@
 /**index.wxss**/
-
-.index-head {
-  height: 100px;
-}
-
-.index-head-background {
-  height: 100px;
-  width: 100%;
-}
-
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -40px;
 }
 
 .userinfo-avatar {
-  width: 160rpx;
-  height: 160rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
   border-radius: 50%;
 }
 
-.index-content {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  box-sizing: border-box;
+.userinfo-nickname {
+  color: #aaa;
 }
 
-.income, .payout {
-  box-sizing: border-box;
-  width: 50%;
-  color: #c8c8c8;
-  font-size: 12px;
-}
-
-.income {
-  padding-left: 20px;
-}
-
-.payout {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.income-number, .payout-number {
-  box-sizing: border-box;
-  width: 50%;
-  color: #c8c8c8;
-  font-size: 20px;
-  font-family: 'PingFangSC-Medium', 'PingFang SC Medium', 'PingFang SC';
-}
-
-.income-number {
-  padding-left: 20px;
-}
-
-.payout-number {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.record {
-  width: 100%;
-}
-
-.date-left, .date-right {
-  box-sizing: border-box;
-  width: 50%;
-  color: #949696;
-  font-size: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.date-left {
-  /* padding-right: 20px; */
-  text-align: right;
-  border-right: 1px solid #949696;
-}
-
-.date-right {
-   /* padding-left: 20px;  */
-  border-left: 1px solid #949696;
-}
-
-.date-left::after {
-  content: '';
-  background-color: #949696;  
-  color: #949696;
-  width: 5px;
-  height: 10px;
-  border-radius: 5px 0 0 5px;
-  display: inline-flex;
-  margin-left: 20px;
-}
-
-.date-right::before {
-  content: '';
-  background-color: #949696;  
-  color: #949696;
-  width: 5px;
-  height: 10px;
-   border-radius: 0 5px 5px 0; 
-  display: inline-flex;
-  margin-right: 20px;
-}
-
-
-.income-left, .payout-right {
-  box-sizing: border-box;
-  width: 50%;
-  color: #949696;
-  font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 28px;
-}
-
-.income-left {   
-  text-align: right;
-  padding-right: 24px;  
-  border-right: 1px solid #949696;  
-  position: relative;
-}
-
-.payout-right {
-  padding-left: 24px;  
-  border-left: 1px solid #949696;
-   position: relative;
-}
-
-.payout-right::before {
-  content:  url(../../image/test_20.png);    
-  position: absolute;
-  top: 14px;
-  left: -11px;
-}
-
-.p-amount {
-  font-size: 14px;
-  padding-left: 20px;
+.usermotto {
+  margin-top: 200px;
 }

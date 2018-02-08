@@ -1,44 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="index-head">
-    <image class="index-head-background" src="../../image/index-head-background.png"></image>
-    <view bindtap="bindViewTap" class="userinfo">
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
   </view>
-  <view class="index-content">
-    <block>
-      <view class="income">当月收入</view>
-      <view class="payout">当月支出</view>
-      <view class="income-number">1000.00</view>
-      <view class="payout-number">200.00</view>
-    </block>
-      <block class="record" wx:key="index"  wx:for="{{ConsumeRecord}}">
-        <block wx:if="{{index == 0 || (item.Date != ConsumeRecord[index-1].Date)}}">
-          <view class="date-left">{{item.Date}}</view>
-          <view class="date-right">{{item.Amount}}</view>
-        </block>
-        <block wx:else>
-          <block wx:if="{{item.Type==1}}">
-            <view class="income-left"></view>
-            <view class="payout-right">
-              <text>{{item.Info}}</text>
-              <text class="p-amount">{{item.Amount}}</text>            
-            </view>
-          </block>
-          <block wx:if="{{item.Type==2}}">
-          <view class="income-left">          
-              <text>
-              {{item.Info}}
-              </text> 
-              <text>
-              {{item.Amount}}</text>
-              </view>
-            <view class="payout-right">   
-            </view>
-          </block>
-        </block>
-    </block>
-    
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
   </view>
 </view>
